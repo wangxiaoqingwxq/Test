@@ -1,0 +1,43 @@
+/*
+Data:2016/07/20
+Athour:wangxiaoqing
+Discription:AOM系统自动化巡检软件
+*/
+.Tc_Top { display:block; width:100%; overflow:hidden; height:50px; border-bottom:1px #EFF2F7 solid; background-color:#fff;}
+.Tc_Top h2 { float:left; overflow:hidden; padding:15px 0px 0px 20px;}
+.Tc_Top h2 span.Text { font-size:15px;}
+.Tc_Top .Close { float:right; box-sizing:border-box; text-align:center; padding:15px 20px 0px 0px;}
+.Tc_Center { display:block; padding:10px 20px; overflow:hidden; border-bottom:1px #EFF2F7 solid; background-color:#fff;}
+.Tc_Center .Tc_Note { display:block; width:100%; overflow:hidden;}
+.Tc_Center .Tc_Note .Tc_P0 { margin-bottom:10px;  text-align:justify; word-break:break-all;}
+.Tc_Bottom { display:block; width:100%; padding:15px 0px; overflow:hidden; background-color:#fff;}
+.Button_search { float:left; height:30px; padding:4px 10px; cursor:pointer; box-sizing:border-box;}
+.Tc_Bottom a { float:right; margin-right:10px; background-color:#F7F7F7; border:1px #DDDDDD solid; padding:4px 12px 4px 9px; height:20px; overflow:hidden;}
+.Tc_Bottom a.MarR20 { margin-right:20px;}
+.Tc_Bottom a span { float:left;}
+.Tc_Bottom a span.Text { color:#797979; height:20px; padding-left:5px;}
+.Tc_Bottom a.blue-green { background:#6CCAC9; border:1px #4BBEBE solid;}
+.Tc_Bottom a.blue-green span.Text,.Tc_Bottom a.grey-blue span.Text { color:#fff;}
+.Tc_Bottom a.grey-blue { background:#6883A3; border:1px #EFF2F7 solid;}
+.Tc_Bottom a:hover { background-color:#fafafa;}
+.Tc_Bottom a.blue-green:hover { background:#7BD0D0;}
+.Tc_Bottom a.grey-blue:hover { background-color:#5E7899;}
+
+/*新建设备*/
+.Tc_NoteTable0 tr td { padding:15px 5px 0px 5px;}
+.Tc_NoteTable0 tr td.L { text-align:right; vertical-align:top;}
+.Tc_NoteTable0 tr td.Padb15 { padding-bottom:15px;}
+.Tc_P1 label { padding-left:5px; padding-right:20px;}
+.Tc_NoteTable0 tr td table { table-layout:fixed;}
+.Tc_NoteTable0 tr td table .top { background-color:#F8F9FB; border:1px #E2E2E4 solid; border-bottom:none; padding:3px 10px; box-sizing:border-box; text-align:center;} 
+.Tc_NoteTable0 tr td table .note { border:1px #E2E2E4 solid; border-top:none;}
+.Tc_NoteTable0 tr td table .note ul li { border-top:1px #E2E2E4 solid; cursor:pointer; padding:1px 10px; box-sizing:border-box; overflow:hidden; text-overflow:ellipsis; white-space:nowrap;}
+.Tc_NoteTable0 tr td table .note ul li:hover,.Tc_NoteTable0 tr td table .note ul li.On { background-color:#6CCAC9; color:#fff;}
+.Tc_NoteTable0 tr td table button.Changemove { display:block; width:28px; height:24px; cursor:pointer; background-color:#fff; border:1px #E2E2E4 solid; margin:0 auto; margin-bottom:15px;}
+.Tc_NoteTable0 tr td table button.Changemove:hover,.Tc_NoteTable0 tr td table button.On { background-color:#6CCAC9; border:none; color:#fff;}
+.Tc_NoteTable0 tr td table tr td { padding:0px;}
+.Tc_NoteTable0 tr td table tr td.Padt34 { padding-top:34px;}
+/*脚本预览*/
+.Tc_Center .Tc_Note .Preview { background-color:#F9F9F9; border:1px #DDDDDD solid; margin:10px 0px; padding:10px 10px 0px 10px; box-sizing:border-box;}
+.Tc_Center .Tc_Note .Preview p { margin-bottom:20px;}
+.Tc_Center .Tc_Note .Preview p span { display:block;}

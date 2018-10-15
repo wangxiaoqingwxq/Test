@@ -1,0 +1,271 @@
+<!--查询条件-->
+<div class="Bamp_search">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="L" width="100px">FTP服务器IP：</td>
+        <td class="Bfb_w15">
+            <input type="text" class="F_input" value="25.77.126.141" />
+        </td>
+        <td class="L" width="70px">端口：</td>
+        <td class="Bfb_w15">
+            <input type="text" class="F_input" value="21" />
+        </td>
+        <td class="L" width="70px">用户名：</td>
+        <td class="Bfb_w15">
+            <input type="text" class="F_input" value="anonymous"/>
+        </td>
+        <td class="L" width="70px">密码：</td>
+        <td class="Bfb_w15">
+            <input type="password" class="F_input" value="******" />
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+</div>
+<!--end-->
+<div class="Bamp_list PadB5">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+        <tr>
+            <!--左侧开始-->
+            <td valign="top" class="Lay_left" width="300px">
+                <div class="Layout_div">
+                      <div class="top">
+                         <h3><span class="N_icon Icon_xx"></span><font>选项</font></h3>
+                      </div>
+                      <ul class="Layout_area" id="JB_note1" style="overflow-y:auto;">
+                        <li>
+                            <div><span class="N_icon Icon_down2" title="展开" onclick="_updownclick2(this);"></span><input type="checkbox" /><font class="title">AIX</font></div>
+                            <ul class="L_Nav1">
+                                <li><input type="checkbox" /><font class="title">文件系统检测</font></li>
+                                <li><input type="checkbox" /><font class="title">VG状态</font></li>
+                                <li><input type="checkbox" /><font class="title">网络状态</font></li>
+                                <li><input type="checkbox" /><font class="title">Errpt</font></li>
+                                <li><input type="checkbox" /><font class="title">检查是否有core dump</font></li>
+                                <li><input type="checkbox" /><font class="title">PageSpace</font></li>
+                                <li><input type="checkbox" /><font class="title">系统DUMP</font></li>
+                                <li><input type="checkbox" /><font class="title">NTP时钟</font></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div><span class="N_icon Icon_down2" title="展开" onclick="_updownclick2(this);"></span><input type="checkbox" /><font>CICS</font></div>
+                        	<ul class="L_Nav1">
+                                <li><input type="checkbox" /><font class="title">子系统状态</font></li>
+                                <li><input type="checkbox" /><font class="title">子系统 cicsas 进程</font></li>
+                                <li><input type="checkbox" /><font class="title">今天 Console 文件中产生的警告信息</font></li>
+                                <li><input type="checkbox" /><font class="title">今天 CSMT.out 文件中产生的警告信息</font></li>
+                                <li><input type="checkbox" /><font class="title">今天 Console 文件中产生的错误信息</font></li>
+                                <li><input type="checkbox" /><font class="title">今天 CSMT.out 文件中产生的错误信息</font></li>
+                                <li><input type="checkbox" /><font class="title">今天产生的dmp文件</font></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div><span class="N_icon Icon_down2" title="展开" onclick="_updownclick2(this);"></span><input type="checkbox" /><font>ctg</font></div>
+                        	<ul class="L_Nav1">
+                                <li><input type="checkbox" /><font class="title">Client Daemon 进程状态</font></li>
+                                <li><input type="checkbox" /><font class="title">Gateway Daemon 进程状态</font></li>
+                                <li><input type="checkbox" /><font class="title">CTG 联机状态</font></li>
+                                <li><input type="checkbox" /><font class="title">CTG 错误日志</font></li> 
+                            </ul>
+                        </li>
+                        <li>
+                            <div><span class="N_icon Icon_down2" title="展开" onclick="_updownclick2(this);"></span><input type="checkbox" /><font>DB2</font></div>
+                        	<ul class="L_Nav1">
+                                <li><input type="checkbox" /><font class="title">DB2 数据库系统连通性</font></li>
+                                <li><input type="checkbox" /><font class="title">DB2表空间利用率</font></li>
+                                <li><input type="checkbox" /><font class="title">DB2错误日志</font></li> 
+                            </ul>
+                        </li>
+                        <li>
+                            <div><span class="N_icon Icon_down2" title="展开" onclick="_updownclick2(this);"></span><input type="checkbox" /><font>GPFS</font></div>
+                        	<ul class="L_Nav1">
+                                <li><input type="checkbox" /><font class="title">GPFS集群节点状态</font></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div><span class="N_icon Icon_down2" title="展开" onclick="_updownclick2(this);"></span><input type="checkbox" /><font>hacmp</font></div>
+                        	<ul class="L_Nav1">
+                                <li><input type="checkbox" /><font class="title">HACMP集群状态</font></li>
+                                <li><input type="checkbox" /><font class="title">HACMP资源组状态</font></li>
+                                <li><input type="checkbox" /><font class="title">HACMP磁盘心跳</font></li> 
+                            </ul>
+                        </li>
+                        <li>
+                            <div><span class="N_icon Icon_down2" title="展开" onclick="_updownclick2(this);"></span><input type="checkbox" /><font>IBM HYYPServer(IHS)</font></div>
+                        	<ul class="L_Nav1">
+                                <li><input type="checkbox" /><font class="title">IBM HTTPServer(IHS) 进程情况</font></li>
+                            </ul>
+                        </li>
+                    </ul>
+                 </div>
+            </td>
+            <!--end-->
+            <!--右侧开始-->
+            <td valign="top" class="Lay_right">
+            	<div class="Content" style="height:40px; max-height:40px; overflow-y:auto;">
+                	
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th class="Bfb_w20 NorRN" align="center">子系统</th>
+                            <th class="Bfb_w40 NorRN" align="left">指标项</th>
+                            <th align="left">参数</th>
+                        </tr>
+                    </table>
+                </div>
+                <div class="Content BorTno" id="JB_note2" style="overflow-y:auto;">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bj">
+                        <tr>
+                            <td rowspan="9" class="Bfb_w20 NorRN" align="center">AIX</td>
+                            <td class="Bfb_w40 NorRN" align="left">-</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">文件系统检查</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">VG状态</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">网络状态</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">Errpt</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">进程是否有core dump</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">PageSpace</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">系统dump</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">NTP时钟</td>
+                            <td align="left">-</td>
+                         </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="Bfb_w20 NorRN" align="center" rowspan="9">CICS</td>
+                            <td class="Bfb_w40 NorRN" align="left" rowspan="2">-</td>
+                            <td align="left"><font>CICS子系统名称：</font><input type="text" class="F_input Bfb_w50" value="RG9999" /></td>
+                         </tr>
+                         <tr>
+                            <td align="left"><font>CICS子系统目录：</font><input type="text" class="F_input Bfb_w60" value="/var/cics_regions/'$REG_NAME'" /></td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">子系统状态</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">子系统cicasa进程</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">今天 Console 文件中产生的警告信息</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">今天 CSMT.out 文件中产生的警告信息</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">今天 Console 文件中产生的错误信息</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">今天 CSMT.out 文件中产生的错误信息</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">今天产生的dmp文件</td>
+                            <td align="left"><font>dmp文件目录：</font><input type="text" class="F_input Bfb_w50" value="$CICS_PATH/dumps/dir1" /></td>
+                         </tr>
+                    </table>
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td class="Bfb_w20 NorRN" align="center" rowspan="5">ctg</td>
+                            <td class="Bfb_w40 NorRN" align="left">-</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left">Client Daemon 进程状态</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">Gateway Daemon 进程状态</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">CTG 联机状态</td>
+                            <td align="left">-</td>
+                         </tr>
+                         <tr>
+                            <td align="left" class="NorRN">CTG 错误日志</td>
+                            <td align="left">-</td>
+                         </tr> 
+                    </table>
+                </div>
+            </td>
+            <!--end-->
+        </tr>
+    </table>
+</div>
+<div class="Bottom JB_Bottom">
+    <a href="javascript:void(0);" class="blue-green" onclick="Tc_boxShow('tc_jb_cj.html','#Tc_Content0','#Tc_Box0','600px');"><span class="Text">+ 创建</span></a>
+    <a href="javascript:void(0);" class="blue-green" onclick="Tc_boxShow('tc_jb_bs.html','#Tc_Content0','#Tc_Box0','500px');"><span class="Text">+ 创建2</span></a>
+</div>
+<div class="div_hiddengdt"></div>
+
+<script type="text/javascript">
+function _updownclick2(obj){
+	var _Title=$(obj).attr("title");
+	if(_Title=="收缩"){
+		$(obj).attr('class','N_icon Icon_down2');
+		$(obj).attr('title','展开');
+		$(obj).parent().parent().removeClass("On");
+		}else{
+			$(obj).attr('class','N_icon Icon_up2');
+		    $(obj).attr('title','收缩');
+			$(obj).parent().parent().addClass("On");
+			}
+		$(obj).parent().next(".L_Nav1").slideToggle();
+}
+function _JBSet(){
+	var _HoverHeight = $("body").height();
+	$("#JB_note1").css({height:_HoverHeight-286});
+	$("#JB_note2").css({height:_HoverHeight-286});
+};
+_JBSet();
+$(window).resize(function(){
+	_JBSet();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

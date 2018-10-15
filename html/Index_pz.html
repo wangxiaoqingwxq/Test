@@ -1,0 +1,122 @@
+<div class="System_PZBox marb20">
+	<div class="top"><h3><font>告警设置</font><!--<span class="N_icon Icon_no1"></span>--><span class="N_icon Icon_up1" title="收缩" onclick="_updownclick1(this);"></span></h3></div>
+    <section class="Note_pz">
+        <div class="note">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" class="GJSZTable">
+                <tr>
+                    <td width="50px" align="center"><input type="checkbox"></td>
+                    <td class="Bfb_w15" align="center"><span class="N_icon Icon_gj1"></span><font>危险等级</font></td>
+                    <td class="Bfb_w25" align="center"><font class="F_l">别名：</font><input type="text" class="F_input Bfb_w80" value="危险" /></td>
+                    <td class="Bfb_w45" align="center"><font class="F_l">声音：</font><input type="text" class="F_input Bfb_w90" value="sound/wx.mp3" /></td>
+                    <td align="center"><button class="Button_test"><span class="Text">测试</span></button></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td align="center"><span class="N_icon Icon_gj2"></span><font>严重等级</font></td>
+                    <td align="center"><font class="F_l">别名：</font><input type="text" class="F_input Bfb_w80" value="严重" /></td>
+                    <td align="center"><font class="F_l">声音：</font><input type="text" class="F_input Bfb_w90" value="sound/yz.mp3" /></td>
+                    <td align="center"><button class="Button_test"><span class="Text">测试</span></button></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td align="center"><span class="N_icon Icon_gj3"></span><font>错误等级</font></td>
+                    <td align="center"><font class="F_l">别名：</font><input type="text" class="F_input Bfb_w80" value="错误" /></td>
+                    <td align="center"><font class="F_l">声音：</font><input type="text" class="F_input Bfb_w90" value="sound/cw.mp3" /></td>
+                    <td align="center"><button class="Button_test"><span class="Text">测试</span></button></td>
+                </tr>
+                <tr>
+                    <td align="center"><input type="checkbox"></td>
+                    <td align="center"><span class="N_icon Icon_gj4"></span><font>提示等级</font></td>
+                    <td align="center"><font class="F_l">别名：</font><input type="text" class="F_input Bfb_w80" value="提示" /></td>
+                    <td align="center"><font class="F_l">声音：</font><input type="text" class="F_input Bfb_w90" value="sound/ts.mp3" /></td>
+                    <td align="center"><button class="Button_test"><span class="Text">测试</span></button></td>
+                </tr>
+            </table>
+        </div>
+        <div class="Bottom Pz">
+            <a href="javascript:void(0);" class="blue-green"><span class="N_icon Icon_ok0">&nbsp;</span><span class="Text">保存</span></a>
+        </div>
+    </section>
+</div>
+<div class="System_PZBox" style="width:48.5%;">
+	<div class="top"><h3><font>采集调度配置</font><!--<span class="N_icon Icon_no1"></span>--><span class="N_icon Icon_up1" title="收缩" onclick="_updownclick1(this);"></span></h3></div>
+    <section class="Note_pz">
+        <div class="note Pad1020">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" class="CJDDTable">
+                <tr>
+                    <td class="L">FTP根目录：</td>
+                    <td colspan="3"><input type="text" class="F_input" /></td>
+                    <td>&nbsp;</td>
+               </tr>
+               <tr>
+                    <td class="L" width="150px">轮询间隔时间：</td>
+                    <td width="20%"><input type="text" class="F_input Bfb_w70 F_l" value="300" /><label>秒</label></td>
+                    <td class="L" width="150px">手动巡检重试次数：</td>
+                    <td width="20%"><input type="text" class="F_input Bfb_w70 F_l" value="3" /><label>次</label></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="L">手动巡检延时时间：</td>
+                    <td><input type="text" class="F_input Bfb_w70 F_l" value="30" /><label>秒</label></td>
+                    <td class="L">保留历史数据期限：</td>
+                    <td><input type="text" class="F_input Bfb_w70 F_l" value="90" /><label>天</label></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="L">数据滞留告警时间：</td>
+                    <td><input type="text" class="F_input Bfb_w70 F_l" value="0" /><label>分钟</label></td>
+                    <td colspan="3">0表示不进行滞留检测</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Bottom Pz">
+            <a href="javascript:void(0);" class="blue-green"><span class="N_icon Icon_ok0">&nbsp;</span><span class="Text">保存</span></a>
+       		<a href="javascript:void(0);" class="grey-blue"><span class="Text">立即采集</span></a>
+        </div>
+    </section>
+</div>
+<div class="System_PZBox F_r" style=" width:50%;">
+	<div class="top"><h3><font>报表配置</font><!--<span class="N_icon Icon_no1"></span>--><span class="N_icon Icon_up1" title="收缩" onclick="_updownclick1(this);"></span></h3></div>
+    <section class="Note_pz">
+        <div class="note Pad1020">
+            <table width="100%" cellpadding="0" cellspacing="0" border="0" class="CJDDTable">
+                <tr>
+                    <td class="L">报表表头标题：</td>
+                    <td colspan="4"><input type="text" class="F_input" /></td>
+               </tr>
+               <tr>
+                    <td class="L" width="150px">每行管理系统个数：</td>
+                    <td width="20%"><input type="text" class="F_input Bfb_w80 F_l" value="4" /><label>个</label></td>
+                    <td class="L" width="150px">每行业务系统个数：</td>
+                    <td width="20%"><input type="text" class="F_input Bfb_w80 F_l" value="4" /><label>个</label></td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="L">每行设备个数：</td>
+                    <td><input type="text" class="F_input Bfb_w80 F_l" value="4" /><label>个</label></td>
+                    <td class="L">巡检频率：</td>
+                    <td><input type="text" class="F_input Bfb_w80 F_l" value="120" /><label>分钟</label></td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div class="Bottom Pz">
+            <a href="javascript:void(0);" class="blue-green"><span class="N_icon Icon_ok0">&nbsp;</span><span class="Text">保存</span></a>
+        </div>
+    </section>
+</div>
+
+<script type="text/javascript">
+function _updownclick1(obj){
+	var _title=$(obj).attr("title")
+	if(_title=="展开"){
+		$(obj).attr("title","收缩");
+		$(obj).attr("class","N_icon Icon_up1");
+		$(obj).parent().parent().next().slideDown();
+		}else{
+		$(obj).attr("title","展开");
+		$(obj).attr("class","N_icon Icon_down1");
+		$(obj).parent().parent().next().slideUp();	
+			}
+	}
+</script>

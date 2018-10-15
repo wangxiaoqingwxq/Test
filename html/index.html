@@ -1,0 +1,170 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AOM系统自动化巡检软件</title>
+<link rel="stylesheet" href="../css/reset.css" type="text/css" />
+<link rel="stylesheet" href="../css/global.css" type="text/css" />
+<link rel="stylesheet" href="../css/fhdata.css" type="text/css" />
+<link rel="stylesheet" href="../css/fhdata_tc.css" type="text/css" />
+<link rel="stylesheet" href="../css/icon.css" type="text/css" />
+<link rel="stylesheet" href="../css/tc_css.css" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="../js/gloabel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+</head>
+
+<body onload="Set_height();The_First_load();" onresize="Set_height();Set_LayoutWH();Left_Center_TcBox('#Center_TcBox');" style="min-width:1350px;">
+<!--头部开始-->
+<div class="Header">
+	<a href="#" class="Logo">AOM系统自动化巡检软件</a>
+    <ul class="Nav">
+    	<li class="A"><a href="javascript:void(0);" title="全屏">全屏</a></li>
+        <li class="B"><a href="javascript:void(0);" title="欢迎管理员：管理员">欢迎管理员：管理员</a></li>
+        <li class="C"><a href="javascript:void(0);" title="声音绘制">声音绘制</a></li>
+        <li class="D"><a href="Login.html" title="注销">注销</a></li>
+    </ul>
+</div>
+<!--头部结束-->
+<!--中间布局开始-->
+<div class="Center"> 
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" style="table-layout:fixed;">
+      <tr>
+        <td width="40px" id="Center_Table" valign="top" style="overflow:hidden;">
+        	<!--中间-左侧菜单开始-->
+			<div class="Center_left" id="Left_menu">
+            	<span class="KJ" onclick="_MenuKJ(this);"><i class="icon icon-KJ"></i></span>
+                <ul class="L_Nav">
+                    <li> 
+                        <a href="javascript:void(0);" class="On" onclick="LeftMenuClick('Index_sy.html','#Center_R_Box',this);_MenuSY(this);"><i class="icon icon-SY"></i><span class="title">首页</span></a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" onclick="LeftMenuClick('Index_gj.html','#Center_R_Box',this);_UpDown0(this);"><i class="icon icon-CG"></i><span class="title">常规</span><span class="cd_button">+</span></a>
+                        <ul class="L_Nav0">
+                            <li><a href="javascript:void(0);" class="On" onclick="LeftMenuClick('Index_gj.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">告警</span><i class="icon icon-XZ"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="LeftMenuClick('Index_tj.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">统计</span><i class="icon icon-XZ"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="LeftMenuClick('Index_bb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">报表</span><i class="icon icon-XZ"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" onclick="LeftMenuClick('Index_xtlb.html','#Center_R_Box',this);_UpDown0(this);"><i class="icon icon-YW"></i><span class="title">业务</span><span class="cd_button">+</span></a>
+                        <ul class="L_Nav0">
+                            <li><a href="javascript:void(0);" class="On" onclick="LeftMenuClick('Index_xtlb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">系统列表</span><i class="icon icon-XZ"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="LeftMenuClick('Index_ywlb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">业务列表</span><i class="icon icon-XZ"></i></a></li>
+                        </ul>
+                        </li>
+                    <li>
+                        <a href="javascript:void(0);" onclick="LeftMenuClick('Index_sblb.html','#Center_R_Box',this);_UpDown0(this);"><i class="icon icon-SB"></i><span class="title">设备</span><span class="cd_button">+</span></a>
+                        <ul class="L_Nav0">
+                            <li><a href="javascript:void(0);" class="On" onclick="LeftMenuClick('Index_sblb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">设备列表</span><i class="icon icon-XZ"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="LeftMenuClick('Index_sbzblb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">设备指标列表</span><i class="icon icon-XZ"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" onclick="LeftMenuClick('Index_mblb.html','#Center_R_Box',this);_UpDown0(this);"><i class="icon icon-MB"></i><span class="title">模板</span><span class="cd_button">+</span></a>
+                        <ul class="L_Nav0">
+                            <li><a href="javascript:void(0);" class="On" onclick="LeftMenuClick('Index_mblb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">模板列表</span><i class="icon icon-XZ"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="LeftMenuClick('Index_mbzblb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">模板指标列表</span><i class="icon icon-XZ"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="LeftMenuClick('Index_cjjb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">创建脚本</span><i class="icon icon-XZ"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" onclick="LeftMenuClick('Index_zbbm.html','#Center_R_Box',this);_UpDown0(this);"><i class="icon icon-ZB"></i><span class="title">指标</span><span class="cd_button">+</span></a>
+                        <ul class="L_Nav0">
+                            <li><a href="javascript:void(0);" class="On" onclick="LeftMenuClick('Index_zbbm.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">指标编码</span><i class="icon icon-XZ"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="LeftMenuClick('Index_zblb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">指标列表</span><i class="icon icon-XZ"></i></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" onclick="LeftMenuClick('Index_pz.html','#Center_R_Box',this);_UpDown0(this);"><i class="icon icon-XT"></i><span class="title">系统</span><span class="cd_button">+</span></a>
+                        <ul class="L_Nav0">
+                            <li><a href="javascript:void(0);" class="On" onclick="LeftMenuClick('Index_pz.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">配置</span><i class="icon icon-XZ"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="LeftMenuClick('Index_sjczrz.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">事件操作日志</span><i class="icon icon-XZ"></i></a></li>
+                            <li><a href="javascript:void(0);" onclick="LeftMenuClick('Index_yhlb.html','#Center_R_Box',this);_Leftmenu0click(this);"><span class="title">用户列表</span><i class="icon icon-XZ"></i></a></li>
+                        </ul>
+                    </li> 
+                </ul>
+            </div>
+        </td>
+        <td valign="top">
+        	<!--中间-左侧菜单结束-->
+            <div class="Center_right">
+                <div id="Center_R_Box">这里显示内容区域</div>
+            </div>
+        </td>
+      </tr>
+    </table>               
+</div>
+<!--中间布局结束-->
+<div class="Tc_Box0" id="Tc_Box0">
+	<table width="100%" height="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>
+        	<div class="Tc_Content0" id="Tc_Content0">弹出窗口的内容</div>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+</div>
+<!--第一个弹出层-->
+<script type="text/javascript"> 
+//二级菜单点击选中
+function _Leftmenu0click(obj){
+	$(obj).addClass("On");
+	$(obj).parent().siblings().children().removeClass("On");	
+};
+//菜单点击展开收缩
+function _UpDown0(obj){
+	var ShowUl0 = $(obj).next("ul");
+	var Menuwidth=$(obj).parent().parent().parent().parent().css('width');
+	if(Menuwidth=='210px'){
+		if(!ShowUl0.is(":hidden")){
+				$(obj).children(".cd_button").html("+");
+				$(obj).next("ul").stop().slideUp();
+				
+			}else{	
+				$(obj).next("ul").stop().slideDown();
+				$(obj).children(".cd_button").html("-");
+				$(obj).parent().siblings().children("ul").stop().slideUp();
+				$(obj).parent().siblings().children().children(".cd_button").html("+");
+				$(obj).next().children("li").find("a").removeClass("On");
+				$(obj).next().children("li:first").find("a").addClass("On");
+			}
+	}
+};
+//点击首页其他菜单收缩
+function _MenuSY(obj){
+	$(obj).parent().siblings("li").find("ul").stop().slideUp();
+	$(obj).parent().siblings("li").children().find(".cd_button").html("+");
+	}
+//点击菜单控件整个菜单左右收缩
+function _MenuKJ(obj){
+	var Menuwidth=$(obj).parent().parent().css('width');
+	if(Menuwidth=='210px'){
+		$(obj).parent().parent().css({'width':'40px'});
+		$(obj).parent().animate({'width':'40px'},100);
+		$(obj).children().removeClass("icon-KJ0").addClass("icon-KJ");
+		$(obj).next().find("ul.L_Nav0").stop().slideUp('fast');
+		$(obj).next().find("a").css({
+			'paddingLeft':'4px',
+		});
+		//$(obj).parent().parent().next().find(".HealthBox").css('width','530px');
+		}else{
+		 $(obj).parent().parent().css({'width':'210px'});
+		 $(obj).parent().animate({'width':'210px'},100);
+		 $(obj).children().removeClass("icon-KJ").addClass("icon-KJ0");
+		 $(obj).next().find("a").css({
+			'paddingLeft':'8px',
+		});
+	    // $(obj).parent().parent().next().find(".HealthBox").css('width','545px'); 
+			}
+	}
+</script>
+
+</body>
+</html>

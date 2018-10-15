@@ -1,0 +1,35 @@
+/*
+Data:2016/07/20
+Athour:wangxiaoqing
+Discription:AOM系统自动化巡检软件
+*/
+/*-----报表详情--------*/
+.Details_RightNote { width:100%;height:100%; overflow:hidden; overflow-y:auto; box-sizing:border-box;}
+.BBdetails_Title { height:45px; padding:10px 20px 5px 15px; box-sizing:border-box;}
+.BBdetails_Title span.Icon_back { float:left; cursor:pointer;}
+.BBdetails_Title .TimeText { line-height:45px;}
+.BBdetails_top { width:100%; height:35px; margin-bottom:20px; overflow:hidden;}
+.BBdetails_top ul { float:left; border:1px #DDDDDD solid; border-bottom:none; border-right:none;}
+.BBdetails_top ul li { float:left; line-height:33px; position:relative;}
+.BBdetails_top ul li a { background-color:#F7F7F7; border-right:1px #DDDDDD solid; border-bottom:1px #DDDDDD solid; padding:9px 13px; box-sizing:border-box;}
+.BBdetails_top ul li a.On { background-color:#fff; border-bottom:none; border-bottom:none;}
+.BBdetails_top span.xhx { border-bottom:1px #ddd solid; width:100%; display:block; height:35px; margin-left:303px; box-sizing:border-box;}
+.top-border { display:none; position:absolute; left:-1px; top:-1px; z-index:10; width:98%; height:2px; background-color:#6CCAC9; border:1px #48BDBD solid;}
+.DisB { display:block;}
+
+.BBbox_details { background-color:#fff; border:1px #DDDDDD solid;}
+.BBbox_details .top { padding:5px 10px; box-sizing:border-box;  background-color:#F7F7F7; }
+.BBbox_details .top font { line-height:20px;}
+.BBbox_details .Icon_up,.BBbox_details .Icon_down { vertical-align:middle; cursor:pointer; padding-right:10px;}
+.BBbox_details .note { width:100%; display:inline-block; padding:10px 35px; box-sizing:border-box; border-top:1px #DDDDDD solid; display:none;}
+.BBbox_details .note .N { width:410px; float:left; margin-bottom:15px; margin-right:15px; }
+.BBbox_details .note .N span { vertical-align:middle;}
+.BBbox_details .note .N a { text-decoration:underline; color:#9BDBDB;}
+.BBbox_details .note .N a:hover { color:#5AC2C2;}
+.BBbox_details .note .N p { padding-left:20px; box-sizing:border-box; text-align:justify; line-height:30px;}
+.BBbox_details .note .N p span { display:block; margin-top:-9px;}
+
+
+
+
+

@@ -1,0 +1,291 @@
+<!--告警查询条件-->
+<div class="Bamp_search">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="L" width="80px">管理系统：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L" width="80px">业务：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L" width="80px">名称：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td><button class="Button_search red marL20"><span class="N_icon Icon_search0"></span><span class="Text">查询</span></button></td>
+      </tr>
+    </table>
+</div>
+<!--end-->
+<!--列表部分头部按钮区域-->
+<div class="Bamp_list">
+    <div class="Top">
+    	<div class="Button">
+            <a href="javascript:void(0);" onclick="Tc_boxShow('tc_sb_add.html','#Tc_Content0','#Tc_Box0','650px');"><span class="N_icon Icon_add">&nbsp;</span><span class="Text">新增</span></a>
+            <a href="javascript:void(0);"><span class="N_icon Icon_del">&nbsp;</span><span class="Text">删除</span></a>
+        </div>
+        <div class="SelectMore"><select class="F_select">
+                <option>--更多操作--</option>
+                <option>进入维护期</option>
+                <option>离开维护期</option>
+                <option>开启自动构造指标</option>
+                <option>关闭自动构造指标</option>
+                <option>立即巡检</option>
+        </select>
+        </div>
+        <!--page start-->
+        <div class="Bamp_page">
+            <ul>
+                <li><a class="PreAll">&lt;&lt;</a></li>
+                <li><a class="Pre">&lt;</a></li>
+                <li><a class="Num On">1</a></li>
+                <li><a class="Num">2</a></li>
+                <li><a class="Num">3</a></li>
+                <li><a class="Num">4</a></li>
+                <li><a class="Num">5</a></li>
+                <li><a class="Next">&gt;</a></li>
+                <li><a class="NextAll">&gt;&gt;</a></li>
+            </ul>
+			<div><input type="text" value="10" /><a class="ok">GO</a></div>
+        </div>
+        <!--page end-->
+    </div>
+    <!--头部结束-->
+    <div class="Content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table">
+          <tr>
+          	<th width="50px" align="center"><input type="checkbox"></th>
+            <th class="Bfb_w10 Curp" align="left" onclick="_Listsort(this);">设备名称<span class="N_icon Icon_lbsort"></span></th>
+            <th class="Bfb_w10" align="left">模板</th>
+            <th class="Bfb_w10 Curp" align="center" onclick="_Listsort(this);">IP地址<span class="N_icon Icon_lbsort"></span></th>
+            <th class="Bfb_w10" align="left" >FTP路径</th>
+            <th class="Bfb_w15" align="left">业务系统</th>
+            <th class="Bfb_w10" align="left">维护期</th>
+            <th class="Bfb_w10" align="left">自动创建鼠标</th>
+            <th class="Curp" align="left"  onclick="_Listsort(this);">最后一次巡检时间<span class="N_icon Icon_lbsort"></span></th>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS1</a></td>
+            <td align="left"><a href="javascript:void(0);">SBKUPMS</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="left">SBKUPMS1</td>
+            <td align="left">备份服务器</td>
+            <td align="left">不在维护期</td>
+            <td align="left">自动创建指标</td>
+            <td align="left"><a href="javascript:void(0);">2013-05-04 18:00:00</a></td>
+          </tr>
+        </table>
+    </div>
+    <!--中间主体结束-->
+    <div class="Bottom">
+        <!--page start-->
+        <div class="Bamp_pageSetcolspan">
+            <label>告警总数26条，危险告警16条</label></span></a>
+        </div>
+        <div class="Bamp_page">
+            <ul>
+                <li><a class="PreAll">&lt;&lt;</a></li>
+                <li><a class="Pre">&lt;</a></li>
+                <li><a class="Num On">1</a></li>
+                <li><a class="Num">2</a></li>
+                <li><a class="Num">3</a></li>
+                <li><a class="Num">4</a></li>
+                <li><a class="Num">5</a></li>
+                <li><a class="Next">&gt;</a></li>
+                <li><a class="NextAll">&gt;&gt;</a></li>
+            </ul>
+			<div><input type="text" value="10" /><a class="ok">GO</a></div>
+        </div>
+        <!--page end-->
+    </div>
+    <!--尾部结束-->
+</div>
+<!--内容区域-->
+<script type="text/javascript">
+function _Listsort(obj){
+	var _class = $(obj).children("span").attr("class");
+	if(_class=="N_icon Icon_lbsort"){
+		$(obj).children("span").attr("class","N_icon Icon_lbdown");
+	}
+	if(_class=="N_icon Icon_lbdown"){
+			$(obj).children("span").attr("class","N_icon Icon_lbup");
+			}
+		if(_class=="N_icon Icon_lbup"){
+			$(obj).children("span").attr("class","N_icon Icon_lbdown");
+			}
+};
+</script>

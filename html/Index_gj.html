@@ -1,0 +1,268 @@
+<!--告警查询条件-->
+<div class="Bamp_search">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="L" width="80px">管理系统：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L" width="80px">业务：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L" width="80px">设备：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L" width="80px">子系统：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+      	<td class="L">告警类型：</td>
+        <td>
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L">告警级别：</td>
+        <td>
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L">开始时间：</td>
+        <td>
+            <ul class="Bamp_searchUl0">
+                <li class="A"><input type="text" class="F_input" value="2015-9-10" /><span class="N_icon Icon_data"></span></li>
+            </ul>
+        </td>
+        <td class="L">结束时间：</td>
+        <td>
+            <ul class="Bamp_searchUl0">
+                <li class="A"><input type="text" class="F_input" value="2015-9-10" /><span class="N_icon Icon_data"></span></li>
+            </ul>
+        </td>
+        <td><span class="N_icon Icon_xq" title="不填开始结束时间查询最近一次巡警产生的告警"></span></td>
+      </tr>
+      <tr>
+      	<td class="L">告警描述：</td>
+        <td><input type="text" class="F_input" /></td>
+		<td colspan="7"><button class="Button_search red marL20"><span class="N_icon Icon_search0"></span><span class="Text">查询</span></button><button class="Button_search blue-green marL10"><span class="N_icon Icon_dc0"></span><span class="Text">导出</span></button></td>
+      </tr>
+    </table>
+</div>
+<!--end-->
+<!--列表部分头部按钮区域-->
+<div class="Bamp_list">
+    <div class="Top">
+    	<div class="Button">
+            <a href="javascript:void(0);"><span class="N_icon Icon_del">&nbsp;</span><span class="Text">删除</span></a>
+            <a href="javascript:void(0);"><span class="N_icon Icon_ok">&nbsp;</span><span class="Text">确认</span></a>
+        </div>
+        <!--page start-->
+        <div class="Bamp_page">
+            <ul>
+                <li><a class="PreAll">&lt;&lt;</a></li>
+                <li><a class="Pre">&lt;</a></li>
+                <li><a class="Num On">1</a></li>
+                <li><a class="Num">2</a></li>
+                <li><a class="Num">3</a></li>
+                <li><a class="Num">4</a></li>
+                <li><a class="Num">5</a></li>
+                <li><a class="Next">&gt;</a></li>
+                <li><a class="NextAll">&gt;&gt;</a></li>
+            </ul>
+			<div><input type="text" value="10" /><a class="ok">GO</a></div>
+        </div>
+        <!--page end-->
+    </div>
+    <!--头部结束-->
+    <div class="Content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table">
+          <tr>
+          	<th width="50px" align="center"><input type="checkbox"></th>
+            <th class="Bfb_w10 Curp" align="left" onclick="_Listsort(this);">指标名<span class="N_icon Icon_lbsort"></span></th>
+            <th class="Bfb_w10 Curp" align="center" onclick="_Listsort(this);">告警等级<span class="N_icon Icon_lbsort"></span></th>
+            <th class="Bfb_w10 Curp" align="center" onclick="_Listsort(this);">设备名称<span class="N_icon Icon_lbsort"></span></th>
+            <th class="Bfb_w10 Curp" align="center" onclick="_Listsort(this);">IP地址<span class="N_icon Icon_lbsort"></span></th>
+            <th class="Bfb_w15 Curp" align="center" onclick="_Listsort(this);">告警时间<span class="N_icon Icon_lbsort"></span></th>
+            <th align="left">告警描述</th>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" onclick="Tc_boxShow('tc_gj_witer0.html','#Tc_Content0','#Tc_Box0','600px');">CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj1"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj2"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj1"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj2"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj1"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj2"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj1"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj2"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj1"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj2"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj1"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj2"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj1"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+          <tr class="Hover">
+            <td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center"><span class="N_icon Icon_gj2"></span></td>
+            <td align="center"><a href="javascript:void(0);" >SSAPSAP2</a></td>
+            <td align="center">11.194.16.65</td>
+            <td align="center">2013-04-13 16:00;00</td>
+            <td align="left"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+          </tr>
+        </table>
+    </div>
+    <!--中间主体结束-->
+    <div class="Bottom">
+        <!--page start-->
+        <div class="Bamp_pageSetcolspan">
+            <label>告警总数26条，危险告警16条</label></span></a>
+        </div>
+        <div class="Bamp_page">
+            <ul>
+                <li><a class="PreAll">&lt;&lt;</a></li>
+                <li><a class="Pre">&lt;</a></li>
+                <li><a class="Num On">1</a></li>
+                <li><a class="Num">2</a></li>
+                <li><a class="Num">3</a></li>
+                <li><a class="Num">4</a></li>
+                <li><a class="Num">5</a></li>
+                <li><a class="Next">&gt;</a></li>
+                <li><a class="NextAll">&gt;&gt;</a></li>
+            </ul>
+			<div><input type="text" value="10" /><a class="ok">GO</a></div>
+        </div>
+        <!--page end-->
+    </div>
+    <!--尾部结束-->
+</div>
+<!--内容区域-->
+<script type="text/javascript">
+function _Listsort(obj){
+	var _class = $(obj).children("span").attr("class");
+	if(_class=="N_icon Icon_lbsort"){
+		$(obj).children("span").attr("class","N_icon Icon_lbdown");
+	}
+	if(_class=="N_icon Icon_lbdown"){
+			$(obj).children("span").attr("class","N_icon Icon_lbup");
+			}
+		if(_class=="N_icon Icon_lbup"){
+			$(obj).children("span").attr("class","N_icon Icon_lbdown");
+			}
+};
+</script>

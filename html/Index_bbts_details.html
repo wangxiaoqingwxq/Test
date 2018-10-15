@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>AOM系统自动化巡检软件</title>
+<link rel="stylesheet" href="../css/reset.css" type="text/css" />
+<link rel="stylesheet" href="../css/global.css" type="text/css" />
+<link rel="stylesheet" href="../css/fhdata.css" type="text/css" />
+<link rel="stylesheet" href="../css/fhdata_tc.css" type="text/css" />
+<link rel="stylesheet" href="../css/icon.css" type="text/css" />
+<script type="text/javascript" charset="utf-8" src="../js/gloabel.js"></script>
+<script type="text/javascript" charset="utf-8" src="../js/jquery.js"></script>
+</head>
+<body onload="Set_height();The_First_load();" onresize="Set_height();Set_LayoutWH();Left_Center_TcBox('#Center_TcBox');">
+<div class="Details_RightNote">
+<!--列表部分头部按钮区域-->
+    <div class="Bamp_list">
+        <!--头部结束-->
+        <div class="BBdetails_top">
+            <ul>
+                <li><span class="top-border"></span><a href="javascript:void(0);" onclick="showUrl_iframe('Index_bbwx_details.html','#Center_R_Box',this);">危险 <font class="red">(25)</font></a></li>
+                <li><span class="top-border"></span><a href="javascript:void(0);" onclick="showUrl_iframe('Index_bbyz_details.html','#Center_R_Box',this);">严重 <font class="orange">(44)</font></a></li>
+                <li><span class="top-border"></span><a href="javascript:void(0);" onclick="showUrl_iframe('Index_bbcw_details.html','#Center_R_Box',this);">错误 <font>(0)</font></a></li>
+                <li><span class="top-border DisB"></span><a href="javascript:void(0);" onclick="showUrl_iframe('Index_bbts_details.html','#Center_R_Box',this);" class="On">提示 <font>(0)</font></a></li>
+            </ul>
+            <span class="xhx"></span>
+        </div>
+        <div class="Content" style="padding:0px;">
+            
+           
+        </div>
+        <!--中间主体结束-->
+    </div>
+<!--内容区域-->
+</div>
+<script type="text/javascript">
+function _clickupdown(obj){
+	var _title = $(obj).attr("title");
+	if(_title=="展开"){
+		$(obj).attr("title","收起");
+		$(obj).attr("class","N_icon Icon_up");
+		$(obj).parent().next().slideDown();
+		$(obj).parent().next().css("display","inline-block");
+		}else{
+			$(obj).attr("title","展开");
+			$(obj).attr("class","N_icon Icon_down");
+			$(obj).parent().next().slideUp();
+			}
+};
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,250 @@
+<!--告警查询条件-->
+<div class="Bamp_search">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td class="L" width="80px">管理系统：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L" width="80px">业务：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L" width="80px">设备：</td>
+        <td class="Bfb_w16">
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L" width="80px">指标名称：</td>
+        <td class="Bfb_w16"><input type="text" class="F_input" /></td>
+        <td >&nbsp;</td>
+      </tr>
+      <tr>
+      	<td class="L">子系统：</td>
+        <td>
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td class="L">指标编码：</td>
+        <td>
+            <select class="F_select">
+                <option>--任意--</option>
+            </select>
+        </td>
+        <td colspan="5"><button class="Button_search red marL20"><span class="N_icon Icon_search0"></span><span class="Text">查询</span></button></td>
+      </tr>
+
+    </table>
+</div>
+<!--end-->
+<!--列表部分头部按钮区域-->
+<div class="Bamp_list">
+    <div class="Top">
+    	<div class="Button">
+            <a href="javascript:void(0);"><span class="N_icon Icon_del">&nbsp;</span><span class="Text">删除</span></a>
+            <a href="javascript:void(0);"><span class="N_icon Icon_ok">&nbsp;</span><span class="Text">确认</span></a>
+            <a href="javascript:void(0);"><span class="N_icon Icon_shut">&nbsp;</span><span class="Text">关闭</span></a>
+            <a href="javascript:void(0);"><span class="N_icon Icon_set">&nbsp;</span><span class="Text">配置告警</span></a>
+        </div>
+        <!--page start-->
+        <div class="Bamp_page">
+            <ul>
+                <li><a class="PreAll">&lt;&lt;</a></li>
+                <li><a class="Pre">&lt;</a></li>
+                <li><a class="Num On">1</a></li>
+                <li><a class="Num">2</a></li>
+                <li><a class="Num">3</a></li>
+                <li><a class="Num">4</a></li>
+                <li><a class="Num">5</a></li>
+                <li><a class="Next">&gt;</a></li>
+                <li><a class="NextAll">&gt;&gt;</a></li>
+            </ul>
+			<div><input type="text" value="10" /><a class="ok">GO</a></div>
+        </div>
+        <!--page end-->
+    </div>
+    <!--头部结束-->
+    <div class="Content">
+        <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table">
+			<tr>
+          	<th width="50px" align="center"><input type="checkbox"></th>
+            <th class="Bfb_w12" align="left">设备名称</th>
+            <th class="Bfb_w12" align="center">指标名称</th>
+            <th class="Bfb_w20" align="center">指标编码</th>
+            <th align="left" class="Pdnone" colspan="4">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table0">
+                    <tr>
+                        <th align="left">设置</th>
+                        <th class="Bfb_w35" align="center">阈值</th>
+                        <th class="Bfb_w15" align="center">状态</th>
+                        <th class="Bfb_w15" align="center">等级</th>
+                    </tr>
+                </table>
+             </th>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center">VG</td>
+            <td align="center">SSAPSAP2A</td>
+            <td align="left" class="Pdnone" colspan="4">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table0">
+                    <tr>
+                        <td align="left" class="BorTn0">设备</td>
+                        <td align="center" class="Bfb_w35 BorTn0"><a href="javascript:void(0);">进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_close"></span></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="BorT">模板</td>
+                        <td align="center" class="Bfb_w35 BorT"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_open"></span></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                </table>
+            </td>
+          </tr>
+          <tr class="Hover">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center">VG</td>
+            <td align="center">SSAPSAP2A</td>
+            <td align="left" class="Pdnone" colspan="4">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table0">
+                    <tr>
+                        <td align="left" class="BorTn0">设备</td>
+                        <td align="center" class="Bfb_w35 BorTn0"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_open"></span></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="BorT">模板</td>
+                        <td align="center" class="Bfb_w35 BorT"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_close"></span></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                </table>
+            </td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center">VG</td>
+            <td align="center">SSAPSAP2A</td>
+            <td align="left" class="Pdnone" colspan="4">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table0">
+                    <tr>
+                        <td align="left" class="BorTn0">设备</td>
+                        <td align="center" class="Bfb_w35 BorTn0"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_open"></span></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="BorT">模板</td>
+                        <td align="center" class="Bfb_w35 BorT"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_open"></span></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                </table>
+            </td>
+          </tr>
+          <tr class="Hover">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center">VG</td>
+            <td align="center">SSAPSAP2A</td>
+            <td align="left" class="Pdnone" colspan="4">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table0">
+                    <tr>
+                        <td align="left" class="BorTn0">设备</td>
+                        <td align="center" class="Bfb_w35 BorTn0"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_open"></span></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="BorT">模板</td>
+                        <td align="center" class="Bfb_w35 BorT"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_open"></span></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                </table>
+            </td>
+          </tr>
+          <tr class="Hover Bj">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center">VG</td>
+            <td align="center">SSAPSAP2A</td>
+            <td align="left" class="Pdnone" colspan="4">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table0">
+                    <tr>
+                        <td align="left" class="BorTn0">设备</td>
+                        <td align="center" class="Bfb_w35 BorTn0"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_open"></span></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="BorT">模板</td>
+                        <td align="center" class="Bfb_w35 BorT"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_open"></span></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                </table>
+            </td>
+          </tr>
+          <tr class="Hover">
+          	<td align="center"><input type="checkbox"></td>
+            <td align="left"><a href="javascript:void(0);" >CicsProcess</a></td>
+            <td align="center">VG</td>
+            <td align="center">SSAPSAP2A</td>
+            <td align="left" class="Pdnone" colspan="4">
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="Bamp_table0">
+                    <tr>
+                        <td align="left" class="BorTn0">设备</td>
+                        <td align="center" class="Bfb_w35 BorTn0"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_open"></span></td>
+                        <td align="center" class="Bfb_w15 BorTn0"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                    <tr>
+                        <td align="left" class="BorT">模板</td>
+                        <td align="center" class="Bfb_w35 BorT"><a href="javascript:void(0);" >进程数为5，不等于【7】</a></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_close"></span></td>
+                        <td align="center" class="Bfb_w15 BorT"><span class="N_icon Icon_gj1"></span></td>
+                    </tr>
+                </table>
+            </td>
+          </tr>
+        </table>  
+    </div>
+    <!--中间主体结束-->
+    <div class="Bottom">
+        <!--page start-->
+        <div class="Bamp_pageSetcolspan">
+            <label>告警总数26条，危险告警16条</label></span></a>
+        </div>
+        <div class="Bamp_page">
+            <ul>
+                <li><a class="PreAll">&lt;&lt;</a></li>
+                <li><a class="Pre">&lt;</a></li>
+                <li><a class="Num On">1</a></li>
+                <li><a class="Num">2</a></li>
+                <li><a class="Num">3</a></li>
+                <li><a class="Num">4</a></li>
+                <li><a class="Num">5</a></li>
+                <li><a class="Next">&gt;</a></li>
+                <li><a class="NextAll">&gt;&gt;</a></li>
+            </ul>
+			<div><input type="text" value="10" /><a class="ok">GO</a></div>
+        </div>
+        <!--page end-->
+    </div>
+    <!--尾部结束-->
+</div>
+<!--内容区域-->
+<script type="text/javascript"></script>
